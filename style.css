@@ -44,3 +44,31 @@ body{
   color: #fff;
   font-size: 1.125em;
 }
+
+/*INTRO*/
+
+.intro{
+  background: url(img/bg-intro.jpg) no-repeat center center; /*alinha horizontalmente e verticalmente*/
+  background-size: cover; /*permite o background cobrir 100% da área, mesmo quando a tela é diminuída*/
+  padding: 150px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.intro h1{
+  text-transform: uppercase;
+  font-size: 3em; 
+}
+
+.intro h1::after{
+  content: "";
+  display: block;
+  width: 20px;
+  height: 4px;
+  background: #fff;
+  margin: 10px auto;
+}
+.intro p{
+  font-style: italic;
+  font-size: 1.125em;
+}
