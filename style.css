@@ -1,0 +1,46 @@
+/*RESET*/
+
+body, h1, h2, h3, p, ul{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  font-family: Georgia, serif;
+  color: #252525;
+}
+
+/*MENU*/
+
+.menu{
+  background: #252525;
+  padding: 20px 0;
+}
+
+.menu-container{
+  max-width: 960px;/*diminui junto com o site(responsivo)*/
+  margin: 0 auto;/*primeiro valor, pra cima e pra baixo, segundo pra esquerda e direita*/
+}
+.menu-container::after, .menu-container::before{ /*CLEAR FIX*/
+  content: "";
+  display: table;
+  clear: both;
+}
+.menu-container > a{
+  display: block;
+  float: left;
+  margin-left: 10px;
+}
+.menu-nav{
+  float: right;
+  margin-right: 10px;
+}
+.menu-nav li{
+  display: inline-block;
+}
+.menu-nav a{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.125em;
+}
